@@ -17,7 +17,7 @@ h1 {
 header {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  width: 60%;
   margin: auto auto;
 }
 
@@ -31,18 +31,27 @@ input {
 button.add {
   width: 20%;
   cursor: pointer;
-  background-color: green;
+  background-color: #008000;
   color: white;
   font-weight: bold;
   border: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+button.add:hover {
+  background-color: #01d101;
 }
 
 main {
   display: flex;
   flex-flow: row wrap;
-  width: 90%;
+  width: 60%;
   margin: auto auto;
   /* border: 1px solid blue; */
   padding-top: 40px;
@@ -58,15 +67,16 @@ main {
   width: 100%;
   box-shadow: 0 0 20px #ccc;
   margin-bottom: 2%;
+  cursor: pointer;
 }
 
 .item.clicado {
-    background-color: #d4f6d9;
+  background-color: #d4f6d9;
 }
 
 .item.clicado .item-nome {
-    text-decoration: line-through;
-    color: gray;
+  text-decoration: line-through;
+  color: gray;
 }
 
 .item-icone {
@@ -88,15 +98,24 @@ main {
   /* border: 1px solid green; */
 }
 
-.delete{
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px;
-    height: 80px;
-    width: 100%; 
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.delete:hover {
+  background-color: rgb(168, 1, 1);
 }
 
 .mdi-check-circle {
-    color: green;
+  color: green;
 }
